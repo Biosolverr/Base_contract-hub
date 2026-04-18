@@ -10,8 +10,6 @@ import { base } from 'wagmi/chains';
 import { CONTRACT_ADDRESSES } from './wagmi';
 import { FACTORY_ABI, MARKETPLACE_ABI } from './abis';
 
-// ... (CONTRACTS_DATA remained the same, omitted for space but I will include it in the final file)
-
 // ══════════════════════════════════════════════════════
 //  CONTRACT DATA
 // ══════════════════════════════════════════════════════
@@ -539,6 +537,48 @@ export default function App() {
             </div>
           </div>
         )}
+
+        {/* ── FOOTER с двумя ссылками на GitHub ── */}
+        <footer style={{
+          marginTop: '40px',
+          padding: '20px 16px',
+          borderTop: '1px solid rgba(255,255,255,0.07)',
+          textAlign: 'center',
+          fontSize: '12px',
+          color: '#6b7280'
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '12px', flexWrap: 'wrap' }}>
+            <a
+              href="https://github.com/Biosolverr/Base_contract-hub"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#9ca3af', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#0052FF'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#9ca3af'}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.52 2.36 1.08 2.93.83.09-.65.35-1.09.64-1.34-2.24-.25-4.6-1.12-4.6-4.98 0-1.1.39-2 1.03-2.71-.1-.25-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.43.1 2.68.64.71 1.03 1.61 1.03 2.71 0 3.87-2.36 4.73-4.62 4.98.36.31.69.92.69 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/>
+              </svg>
+              Frontend
+            </a>
+            <a
+              href="https://github.com/Biosolverr/Biosolverr-contract-hub-contract"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#9ca3af', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#0052FF'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#9ca3af'}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.52 2.36 1.08 2.93.83.09-.65.35-1.09.64-1.34-2.24-.25-4.6-1.12-4.6-4.98 0-1.1.39-2 1.03-2.71-.1-.25-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.43.1 2.68.64.71 1.03 1.61 1.03 2.71 0 3.87-2.36 4.73-4.62 4.98.36.31.69.92.69 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/>
+              </svg>
+              Smart Contracts
+            </a>
+          </div>
+          <div style={{ fontSize: '10px', opacity: 0.6 }}>
+            © 2025 ContractHub — Trustless. Atomic. On Base.
+          </div>
+        </footer>
 
       </div>
     </div>
