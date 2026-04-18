@@ -10,7 +10,7 @@ export const config = createConfig({
     // Only add walletConnect if project ID is available, but for now we'll stick to injected and coinbase
   ],
   transports: {
-    [base.id]: http(),
+    [base.id]: http(`https://api.base.org/rpc?apiKey=${import.meta.env.VITE_CDP_API_KEY}`),
   },
 })
 
