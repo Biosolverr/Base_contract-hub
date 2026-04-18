@@ -1,0 +1,6 @@
+{
+  "name": "ContractHub Base",
+  "description": "A marketplace and factory for launching verified smart contracts on Base Mainnet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
